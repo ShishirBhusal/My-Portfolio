@@ -128,11 +128,16 @@ a {
   text-decoration: none;
 }
 
-img {
+.testimonial_data img {
   max-width: 100%;
   height: inherit;
 }
 
+#img{
+  margin-left: -85px;
+  height: inherit;
+
+}
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
@@ -550,11 +555,11 @@ img {
 }
 
 .skills_css{
-  width: 80%;
+  width: 90%;
 }
 
 .skills_javascript{
-  width: 60%;
+  width: 90%;
 }
 
 .skills_php{
@@ -562,13 +567,13 @@ img {
 }
 
 .skills_nodejs{
-  width: 60%;
+  width: 80%;
 }
 .skills_python{
-  width: 70%;
+  width: 60%;
 }
 .skills_ruby{
-  width: 55%;
+  width: 90%;
 }
 
 .skills_figma{
@@ -1113,6 +1118,14 @@ img {
   .home_scroll_social{
     visibility: hidden;
   }
+  
+  #img {
+    /* max-width: 100%; */
+    height: inherit;
+    margin-left: -43px;
+  }
+
+
 }
 
 @media screen and (min-width:568px){
@@ -1122,6 +1135,7 @@ img {
     gap: 30px;
     padding-top: .5rem;
   }
+  
 
   .home_data{
     justify-self: center;

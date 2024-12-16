@@ -2,6 +2,20 @@
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
+function sendEmail() {
+  let parms = {
+    name : document.getElementById('name').value,
+      email : document.getElementById('email').value,
+      subject : document.getElementById('project').value,
+      message : document.getElementById('message').value,
+  }
+  emailjs.send("service_wcvk058","template_7rsvliv",parms).then( (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },);
+}     
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
